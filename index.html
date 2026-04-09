@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Silk &amp; Glass Collective | Премиум туры в Китай</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav" id="siteNav" aria-label="Основная навигация">
+    <a class="nav__brand" href="#">The Silk &amp; Glass Collective</a>
+    <button type="button" class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Открыть меню">
+      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+    </button>
+    <div class="nav__links" id="navLinks" role="navigation">
+      <a class="is-active" href="#">Tours</a>
+      <a href="#">Medical</a>
+      <a href="#">Destinations</a>
+      <a href="#">About</a>
+    </div>
+    <div class="nav__actions">
+      <span class="nav__lang">EN/RU</span>
+      <button type="button" class="nav__chat" aria-label="Чат"><span class="material-symbols-outlined">chat</span></button>
+      <button type="button" class="btn-gradient">Call Agent</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero__bg">
+      <img alt="China at Sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA16MVlThqjV2wBrxcK07MWiOkk5ScgKzwqpueDRqGRkKlJGeKgUc6rMli_TRh8pE0kcJoRhiaDDLNdRfLCeanUJY7DkbM-yVD1zVwtfYSVsg6rBcLWmLandOdfKFuVOGBW1L9hCO31liQJSPLdvJ6JI9K5MJBgxPo6NoBKIO-wmxHZHvvqiaFEEtOF0SzEOOqqUlq8AmXyICHjVfwhtcs4zV4aNFdFgs5ekvXoEHLDnqqklVcI8fXiZ0wu_fiYMKLwImnhSZmenmPA" />
+      <div class="hero__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__title">Откройте Китай с комфортом и по лучшим ценам</h1>
+      <p class="hero__lead">Туры, лечение и экскурсии с полной организацией под ключ от экспертов направления.</p>
+      <div class="hero__ctas">
+        <button type="button" class="btn-cta">Подобрать тур</button>
+        <button type="button" class="btn-outline-light">Получить консультацию</button>
+      </div>
+    </div>
+    <div class="hero__search-wrap">
+      <div class="hero__search">
+        <div class="hero__field">
+          <label class="hero__label" for="dest">Destination</label>
+          <select id="dest">
+            <option>Dalian (Далянь)</option>
+            <option>Hunchun (Хуньчунь)</option>
+            <option>Yanji (Яньцзи)</option>
+            <option>Shenyang (Шэньян)</option>
+          </select>
+        </div>
+        <div class="hero__field">
+          <label class="hero__label" for="service">Service Type</label>
+          <select id="service">
+            <option>Leisure Tour</option>
+            <option>Medical Treatment</option>
+            <option>Business Trip</option>
+          </select>
+        </div>
+        <div class="hero__field">
+          <label class="hero__label" for="dates">Date Range</label>
+          <input id="dates" type="text" placeholder="Select dates" autocomplete="off" />
+        </div>
+        <button type="button" class="hero__search-btn" aria-label="Поиск">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dest container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Our Gems</span>
+        <h2 class="section-title">Популярные направления</h2>
+      </div>
+      <p class="section-desc">От лечебных курортов до футуристических мегаполисов Китая.</p>
+    </div>
+    <div class="dest-grid">
+      <article class="dest-card">
+        <img alt="Dalian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk6ndxOwVmWSFF8C0L_7yGGzM6gSG4XcIHZdq3l2xS8LyubLBEb8uOSUbp4WIJAJYINIOhrosvLVLsMxv6JOau-skA-1wixnikGa9Gmdv35s7AmFQJxDd8wPMCaiFE-m1esjM_mfS0ECeQCffL_vbk0WZ5fyCThHHJMtyZFgknj7wKntFFqnaMlO0ANi6dZMf_RkaDJyvZSxIXNNd9Qu0VSCCLUiFIkEO0yRH7yrxY1q7NRA0tf9MkFDAVb97KZt7LBTAZ_bHrdonl" />
+        <div class="dest-card__overlay">
+          <h3>Dalian / Далянь</h3>
+          <p>The pearl of the Yellow Sea</p>
+          <div class="dest-card__row">
+            <span class="dest-card__price">от 45 000 ₽</span>
+            <button type="button" class="btn-glass">View Tours</button>
+          </div>
+        </div>
+      </article>
+      <article class="dest-card">
+        <img alt="Hunchun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFMMaLfFyEsPL2RClNu-Wz4n3hiXN7Phh5UOdkGtSeDzlD3yTLnVeAG-uOuRyRKM8HkU4g1ShYDPu9AwphbG4n4nE0biEmfp19RSIID9ieh8s7g2Tt3B9-z50B2_hsvbkk14KS1zw9VrwuyG0oRGf3Do9OmAC6EvWe7nSK4a2z4VGCTxTAe45vA4vxdVVxWJOqoM-P_kF3KIsLyf6lfSWJMfX_o8xkuS-95cKKgfsEaD8jC1Ede8xU8NILbugju1oYWXAikrYwOdWb" />
+        <div class="dest-card__overlay">
+          <h3>Hunchun / Хуньчунь</h3>
+          <p>Traditional hospitality</p>
+          <div class="dest-card__row">
+            <span class="dest-card__price">от 18 000 ₽</span>
+            <button type="button" class="btn-glass">View Tours</button>
+          </div>
+        </div>
+      </article>
+      <article class="dest-card">
+        <img alt="Shenyang" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtMmvLvrzypWYcRd1gYwQoB5pGdWpkcNLJg6DbBSM0NYS3OaycVKb_U9-ZCWbLLY9JqmxJZtUUdVpGbi0S2vDAP65izGKMgBGVwFFlR8--sN0UMvk9fQ3Z-B4Q9WLcjv0MTlMyU2-L3TuAu1A7N8k-Wyfl3a6mIeUC0GeJZsoJ-0epzBjWVF-cxU5pzXfui0YN8c4lXB56dOQoeEdB25kO91-cEE3MMzva6H-PDU2iyfTIKLzhaoaAKTSidPHHhNTAad00U4Y9IKDa" />
+        <div class="dest-card__overlay">
+          <h3>Shenyang / Шэньян</h3>
+          <div class="dest-card__row">
+            <span class="dest-card__price">от 52 000 ₽</span>
+            <button type="button" class="btn-glass">View Tours</button>
+          </div>
+        </div>
+      </article>
+      <article class="dest-card">
+        <img alt="Yanji" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvij8cUV6Jpn6zwp0eMZn15ar1xjyTClHT8P-brBzXlOuKyFgHxYFwyk8X83L7JSy-mocFrFc_CDvG6sM6DWtSy93FOXpzHOmeJ7lc74cbZ-zw3GJU1dtouzVQ6WQWo9Gfxe-w7LbRFhFYMQfpPKz_i6-tv9JALWX_exGvw-Zi8xESQI9oEB1SashJr9bmab3wMjViWXhemig3hHVfCK-k8bXkGhHKQULP9wzfzRm3lqkQPaxil_Bqq00w1iB27n-rQQAo-gXgUW5h" />
+        <div class="dest-card__overlay">
+          <h3>Yanji / Яньцзи</h3>
+          <div class="dest-card__row">
+            <span class="dest-card__price">от 32 000 ₽</span>
+            <button type="button" class="btn-glass">View Tours</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-benefits">
+    <div class="container">
+      <div class="benefits-grid">
+        <div class="benefit">
+          <div class="benefit__icon"><span class="material-symbols-outlined">verified</span></div>
+          <h4>15+ лет опыта</h4>
+          <p>Экспертиза с 2009 года</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon"><span class="material-symbols-outlined">handshake</span></div>
+          <h4>Прямые партнеры</h4>
+          <p>Никаких посредников</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon"><span class="material-symbols-outlined">sell</span></div>
+          <h4>Лучшие цены</h4>
+          <p>Гарантия выгоды</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon"><span class="material-symbols-outlined">medical_services</span></div>
+          <h4>Лечебная экспертиза</h4>
+          <p>Проверенные клиники</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon"><span class="material-symbols-outlined">support_agent</span></div>
+          <h4>24/7 Поддержка</h4>
+          <p>Всегда на связи</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon"><span class="material-symbols-outlined">description</span></div>
+          <h4>Помощь с визой</h4>
+          <p>Оформление под ключ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-catalog">
+    <div class="catalog-layout">
+      <aside class="catalog-filters" aria-label="Фильтры туров">
+        <h3>Filter Tours</h3>
+        <p>Refine your ethereal journey</p>
+        <div class="filter-block">
+          <span>Price Range</span>
+          <input class="filter-range" type="range" min="0" max="100" value="50" aria-label="Диапазон цены" />
+        </div>
+        <div class="filter-block">
+          <span>Categories</span>
+          <label class="filter-label filter-label--active">
+            <span class="material-symbols-outlined">medical_services</span> Medical
+          </label>
+          <label class="filter-label">
+            <span class="material-symbols-outlined">explore</span> Excursion
+          </label>
+          <label class="filter-label">
+            <span class="material-symbols-outlined">payments</span> Budget
+          </label>
+        </div>
+        <button type="button" class="btn-filter">Apply Filters</button>
+      </aside>
+      <div class="catalog-grid">
+        <article class="tour-card">
+          <div class="tour-card__media">
+            <img alt="Medical Spa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoC2aP7i4BsH274ISuSya0XWmPGW0993Fo-LeCU05msCad5lr0JEVSagQKg747qNy6nx9NKvuCU9Z0R7dr7CR8ttToCmlQMclQ9-BffdCpYyTEZZ6mrd80ydLESaGo-njpD9Tya7AcQa7K5JXQc7vjTWAjSSjYT2FYUIBzr4jltjMhp9tFNXkSSfRcuaLiI_MHmG56MFOaKv9ITbrFwzCpHKvjNbmCtF3qFZR0eMinfesk02hCVe3qNV_10qMh-Z8bIWWsSKmqVdXL" />
+            <span class="tour-card__badge">Top Rated</span>
+          </div>
+          <div class="tour-card__body">
+            <div class="tour-card__head">
+              <h3>Здоровье Даляня: Оздоровительный тур</h3>
+              <span class="tour-card__duration">12 дней</span>
+            </div>
+            <ul class="tour-card__list">
+              <li><span class="material-symbols-outlined">check_circle</span> Диагностика и лечение</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Отель 5* на берегу моря</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Русскоговорящий гид</li>
+            </ul>
+            <div class="tour-card__footer">
+              <div>
+                <small>All inclusive</small>
+                <div class="price">78 900 ₽</div>
+              </div>
+              <button type="button" class="btn-book">Book Now</button>
+            </div>
+          </div>
+        </article>
+        <article class="tour-card">
+          <div class="tour-card__media">
+            <img alt="City Tour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_ceTOQwNaHvbtqXrEsoyiwS2I8XRbYj6qNGiKB5l7DcLICSVVvaUGv2NWZzS3EW1gPDUOI8r4Bs66MNCHrOad3KdTrgPVrG4Qn6r6PpOF2FQ0PIt6PIrmrHdT_j8Yc6t3CUJlestSeZmihecrdEEdh0HdSvG_oT4f4uWV2xDmz16AE_2Hoh0Ha7VgD3Zyy3zo8L23znJUTLmyFe3et_ziaMNJefbJ1GYfOE2yA2RHWqGWptn4Pg6xXBWklrqr1Y5zcNz2mjh1J4Ue" />
+          </div>
+          <div class="tour-card__body">
+            <div class="tour-card__head">
+              <h3>Огни Шэньяна: Экскурсионный микс</h3>
+              <span class="tour-card__duration">7 дней</span>
+            </div>
+            <ul class="tour-card__list">
+              <li><span class="material-symbols-outlined">check_circle</span> Императорский дворец</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Шоппинг-тур</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Трансфер включен</li>
+            </ul>
+            <div class="tour-card__footer">
+              <div>
+                <small>Basic package</small>
+                <div class="price">54 200 ₽</div>
+              </div>
+              <button type="button" class="btn-book">Book Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-medical">
+    <div class="section-medical__deco" aria-hidden="true"></div>
+    <div class="medical-grid container">
+      <div>
+        <span class="medical-pill">Medical Excellence</span>
+        <h2>Медицина Китая: Инновации и традиции</h2>
+        <p class="lead">Мы организуем высокотехнологичное лечение в лучших государственных и частных клиниках: от сложного протезирования зубов до комплексной диагностики организма.</p>
+        <div class="medical-mini-grid">
+          <div class="medical-tile">
+            <span class="material-symbols-outlined">dentistry</span>
+            <h4>Стоматология</h4>
+            <p>Премиум-протезирование за 3-5 дней по ценам в 2 раза ниже РФ.</p>
+          </div>
+          <div class="medical-tile">
+            <span class="material-symbols-outlined">vital_signs</span>
+            <h4>Диагностика</h4>
+            <p>Полный Check-up организма за один день с использованием ИИ.</p>
+          </div>
+        </div>
+        <button type="button" class="btn-cta">Get doctor's consultation</button>
+      </div>
+      <div class="medical-visual">
+        <div class="medical-visual__frame">
+          <img alt="Chinese Medical Clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpbrXFuSELaZsXfyPNuVZQ7Jjm9EYP0MPb5kdysTGuCXHz4TRpO6qP9nZ-wC7qGoLgFeoJe7DfWJMZWBlZNUPIUhtHNv1aaS3W0XYvhiAWUFGfmOaxyIZKv8gFC435hlnVewBoit19r7GEeeLBGOEguB3t0MZc_EdlepmFW20OX-tyCe29W-5EAobVa1K30Rvx538JL2r5bK_5gGIWJy7Yj9RDuisGzKUMRdcovrJTq7QhCsMo1_myj6gFBXa0ICRKI4mmEEIB46V_" />
+        </div>
+        <div class="medical-stat">
+          <strong>98%</strong>
+          <span>Успешных кейсов</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-reviews container">
+    <h2>Отзывы наших путешественников</h2>
+    <div class="reviews-grid">
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 из 5">
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+        </div>
+        <p class="quote">«Ездили в Хуньчунь на лечение зубов. Организация на высоте: встретили на границе, поселили в отличный отель. За 4 дня сделали всё, что в России считали месяцами. Огромное спасибо!»</p>
+        <div class="review-author">
+          <img alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY7sqtGA9n1SO0QSsLIB_MPb7P2J_PAi2BrKMsHlLvXBUvp6BLjEhY-P3j9-001WadaWHEzuqs_ddvtzZ-a1FcmjiCR1C3D9ZdfYP5tJO33pcK9KsqeJCO1maoPNn7zlODaGbYLA9P3D78tsW7M2QQRUweOR6OGhQCShQ4NCVZwZLrtMuM0wKEXW_v3hnnkjHmbVTM5sj06Png6uThXZiBctcE1XCTpfPl9WNFVAFHXXbzYEwFwwRpDc8tc8orEWWoa-Go5ZbktvW8" />
+          <div>
+            <strong>Елена М.</strong>
+            <span>Москва</span>
+          </div>
+        </div>
+      </article>
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 из 5">
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+        </div>
+        <p class="quote">«Далянь поразил своей красотой. Тур был продуман до мелочей — от комфортного трансфера до экскурсий с гидом, который действительно знает историю. Рекомендую!»</p>
+        <div class="review-author">
+          <img alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCmNRCiFBMBzom62MfSLaIE-ATUyIoxQE7cGSo7iFai3ET7PArGpLMa1i1GqsiQcRKaMPIv2QRqQqndIr8qMYSY9AbYs57oJTzLBCyrVEK6S3A7_gufGHFFAOIxysEqUYR5fAGy2MxccMJ8hx4e4QkNi9cGi8JhV0ajzcdixWm6kqeqounXamMkHEx5-y9UWF9mnP9jd38Pen5z7QFRdt3-gLmdIkXLzYoARHOxJdwv6_WwGQglMWyCrftUhJT2vj9zSMjcRX4shdM" />
+          <div>
+            <strong>Александр К.</strong>
+            <span>Владивосток</span>
+          </div>
+        </div>
+      </article>
+      <article class="review-card">
+        <div class="review-stars" aria-label="4.5 из 5">
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star</span>
+          <span class="material-symbols-outlined icon--fill">star_half</span>
+        </div>
+        <p class="quote">«Были в Яньцзи всей семьей. Гастрономический тур превзошел ожидания. Китайская и корейская кухня — это нечто! Спасибо за теплый прием и заботу.»</p>
+        <div class="review-author">
+          <img alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9ZSeDQ12phZq1j1kqbkDlKZF8OGfE-q_4NMlx7-3oPgNnJ_cnn34MKe0SZCi8z7vLXpAVA_lDK2JIsFuSRI-7UgkOTo5wBLV_389Ro7XdE5K1pAUk1ZxFqkdbDMc0dvGxjruTilys3Jy0tOn2OJ-N3VgsUAdtBcLpTEOOU3ogOtsePhhjKli8JXQZpVU2Ak3TwonCjuz5zlyNTelKTs3BB-r6vyKEyiXnOA084rjFe0kJiIPiG1lkyj6zYThxzbRJluZ8D9bgi-EH" />
+          <div>
+            <strong>Мария С.</strong>
+            <span>Новосибирск</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-steps">
+    <div class="container">
+      <h2>Ваш путь в Китай за 3 шага</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step__icon"><span class="material-symbols-outlined">edit_note</span></div>
+          <h3>Заявка</h3>
+          <p>Оставьте заявку на сайте или позвоните нам. Обсудим ваши пожелания.</p>
+        </div>
+        <div class="step">
+          <div class="step__icon"><span class="material-symbols-outlined">fact_check</span></div>
+          <h3>Подбор тура</h3>
+          <p>Подготовим 3 идеальных варианта под ваш бюджет и цели.</p>
+        </div>
+        <div class="step">
+          <div class="step__icon"><span class="material-symbols-outlined">flight_takeoff</span></div>
+          <h3>Поездка</h3>
+          <p>Мы берем на себя визу, страховку, перелеты и ваше спокойствие.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-cta">
+    <div class="cta-panel">
+      <div class="cta-panel__text">
+        <h2>Подберем идеальный тур за 5 минут</h2>
+        <p>Оставьте контакты — мы перезвоним, проконсультируем бесплатно и забронируем за вами спецпредложение.</p>
+        <div class="cta-checks">
+          <div><span class="material-symbols-outlined">check</span><span>Бесплатно</span></div>
+          <div><span class="material-symbols-outlined">check</span><span>Ни к чему не обязывает</span></div>
+        </div>
+      </div>
+      <div class="cta-panel__form-wrap">
+        <form class="cta-form" id="leadForm" novalidate>
+          <div>
+            <label for="leadName">Ваше имя</label>
+            <input id="leadName" name="name" type="text" placeholder="Иван Иванов" autocomplete="name" />
+          </div>
+          <div>
+            <label for="leadPhone">Номер телефона</label>
+            <input id="leadPhone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" />
+          </div>
+          <button type="submit" class="btn-submit">Подобрать тур сейчас</button>
+          <p class="fineprint">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-contact">
+    <div class="contact-grid">
+      <div class="contact-column">
+        <div class="contact-block">
+          <h2>Наши контакты</h2>
+          <div class="contact-rows">
+            <div class="contact-row">
+              <span class="material-symbols-outlined">location_on</span>
+              <div>
+                <strong>Адрес офиса</strong>
+                <p>г. Владивосток, ул. Светланская, 10, офис 402</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <span class="material-symbols-outlined">call</span>
+              <div>
+                <strong>Телефон</strong>
+                <p>8 (800) 555-35-35</p>
+                <p>+7 (924) 123-45-67</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a class="btn-wa" href="#"><span class="material-symbols-outlined">message</span> WhatsApp</a>
+            <a class="btn-tg" href="#"><span class="material-symbols-outlined">send</span> Telegram</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <img alt="Карта: Владивосток" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM5fHsYHChqeu3VA2_6kPg5aIgfIHwzy2rSjAqKxWaAP1O1mbYwiMhOhb2HwRtBEznT6KeIB75jdT08lC01yH6IBZnWUsXQKu6l31rCdcPu_dv__Sy2XjsvSO1s8XSl8FXbNVxX8ydMaeDQUtfl7jtPn8DvhuJ5hcfK0Ugl8OtqtpJM2xte3c-4fWCD3ZsJQzRZQiidAxRuiPdeMmmgHiLPdkUD-bfcmCF0rOf2otF4-izO1kvmpfk1hVBqY5hp3pAUOioouAXmYIK" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">The Silk &amp; Glass Collective</div>
+        <p class="footer-about">Создаем премиальные условия для вашего отдыха и лечения в Поднебесной. Каждая поездка — это произведение искусства.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Услуги</h4>
+        <a href="#">Лечебные туры</a>
+        <a href="#">Экскурсии по Китаю</a>
+        <a href="#">Бизнес-поездки</a>
+        <a href="#">Визовая поддержка</a>
+      </div>
+      <div class="footer-col">
+        <h4>Направления</h4>
+        <a href="#">Далянь</a>
+        <a href="#">Хуньчунь</a>
+        <a href="#">Яньцзи</a>
+        <a href="#">Шэньян</a>
+      </div>
+      <div class="footer-col">
+        <h4>Информация</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Medical Licenses</a>
+        <a href="#">Contact Support</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 The Silk &amp; Glass Collective. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Сайт"><span class="material-symbols-outlined">public</span></a>
+        <a href="#" aria-label="Почта"><span class="material-symbols-outlined">mail</span></a>
+        <a href="#" aria-label="Чат"><span class="material-symbols-outlined">chat</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
